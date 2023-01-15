@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Budget Calculator</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,600;1,800&display=swap" rel="stylesheet">  
+</head>
+<body>
+  <h1>Budget Calculator</h1>
+  <div class="container">
+    <div id="income-section">
+      <h2>Income</h2>
+      <form id="income-form">
+        <label for="income-description">Description:</label>
+        <input type="text" id="income-description">
+        <br>
+        <label for="income-amount">Amount:</label>
+        <input type="number" id="income-amount" step='0.01'>
+        <br>
+        <button type="submit">Add Income</button>
+      </form>
+      <h3>Income List:</h3>
+      <ul id="income-list"></ul>
+      <div id="income-total"><h2>Income: $<span id="income-total-amount">0</span></h2></div>
+    </div>
+    <div id="expense-section">
+      <h2>Expenses</h2>
+      <form id="expense-form">
+        <label for="expense-description">Description:</label>
+        <input type="text" id="expense-description">
+        <br>
+        <label for="expense-amount">Amount:</label>
+        <input type="number" id="expense-amount" step='0.01'>
+        <br>
+        <button type="submit">Add Expense</button>
+      </form>
+      <h3>Expense List:</h3>
+      <ul id="expense-list"></ul>
+      <div id="expense-total"><h2>Total Expense: $<span id="expense-total-amount">0</span></h2></div>
+    </div>
+  </div>
+  <div id="budget-section">
+    <div id="budget-total"><h1>Total Budget: $<span id="budget-total-amount">0</span></h1></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
